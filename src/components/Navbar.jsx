@@ -20,7 +20,7 @@ export default function Navbar() {
   const scrollTo = (id) => {
     setOpen(false);
     const targetId = id.toLowerCase();
-    
+
     if (location.pathname !== '/') {
       navigate('/#' + targetId);
     } else {
@@ -33,14 +33,13 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-inner">
         <a className="nav-logo" onClick={() => scrollTo('home')}>
-         <img
-              src="/lognave.jpg"
-              alt="Lux & Decibels"
-              className="logo-img"/>
+          <img src="/lognave.jpg" alt="Lux & Decibels" className="logo-img" />
         </a>
         <ul className="nav-links">
           {navLinks.map(link => (
-            <li key={link}><button onClick={() => scrollTo(link)} className="nav-link">{link}</button></li>
+            <li key={link}>
+              <button onClick={() => scrollTo(link)} className="nav-link">{link}</button>
+            </li>
           ))}
         </ul>
         <button className="btn-primary nav-cta" onClick={() => scrollTo('contact')}>
