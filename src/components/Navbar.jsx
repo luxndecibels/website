@@ -33,7 +33,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-inner">
         <a className="nav-logo" onClick={() => scrollTo('home')}>
-          <img src="/lognave.jpg" alt="Lux & Decibels" className="logo-img" />
+          <img src="/logowhit.png" alt="Lux & Decibels" className="logo-img" />
         </a>
         <ul className="nav-links">
           {navLinks.map(link => (
