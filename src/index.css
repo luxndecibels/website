@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ═══════════════════════════════════════════════════════
+   LUX & DECIBELS — GLOBAL DESIGN TOKENS
+   Single typeface system: Inter (see README-TYPOGRAPHY.md)
+═══════════════════════════════════════════════════════ */
+:root {
+  /* ── Color tokens (unchanged from original brand palette) ── */
+  --bg: #060a12;
+  --bg2: #080d18;
+  --bg3: #0a1020;
+  --card: #0d1525;
+  --card2: #111c30;
+  --border: rgba(180,140,60,0.12);
+  --border2: rgba(180,140,60,0.22);
+  --gold: #c9a84c;
+  --gold2: #e8c56a;
+  --gold-glow: rgba(201,168,76,0.18);
+  --amber: #f0a500;
+  --teal: #00c2b8;
+  --teal-glow: rgba(0,194,184,0.15);
+  --text: #e8e0d0;
+  --text2: #ffffff;
+  --radius: 10px;
+  --radius-lg: 16px;
+
+  /* ── Typography tokens ── */
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Fluid type scale — identical across every section */
+  --fs-h1: clamp(34px, 4.8vw, 56px);   /* Page / hero level heading */
+  --fs-h2: clamp(28px, 3.6vw, 40px);   /* Section heading */
+  --fs-h3: clamp(19px, 1.8vw, 22px);   /* Sub-heading / card title */
+  --fs-h4: clamp(15px, 1.3vw, 17px);   /* Minor heading / label-strong */
+  --fs-body: 16px;                      /* Body copy */
+  --fs-body-sm: 14px;                   /* Secondary body copy */
+  --fs-label: 13px;                     /* Eyebrow / uppercase labels */
+  --fs-caption: 12px;                   /* Captions, meta text */
+
+  --lh-heading: 1.2;
+  --lh-body: 1.8;
+
+  --ls-label: 2.5px;
+  --ls-heading: 0.3px;
+
+  /* ── Shared layout tokens ── */
+  --container-max: 1200px;
+  --container-pad: 32px;
+  --container-pad-tablet: 24px;
+  --container-pad-mobile: 20px;
+  --section-pad-y: 100px;
+  --section-pad-y-tablet: 72px;
+  --section-pad-y-mobile: 56px;
+  --heading-gap: 16px;      /* space between label → heading */
+  --subtitle-gap: 14px;     /* space between heading → subtitle/body */
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  font-weight: var(--fw-regular);
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  overflow-x: hidden;
+}
+
+/* ── Unified heading rules — every h1–h4 in the app inherits this ── */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  color: var(--text2);
+}
+h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); }
+h2 { font-size: var(--fs-h2); font-weight: var(--fw-semibold); }
+h3 { font-size: var(--fs-h3); font-weight: var(--fw-medium); }
+h4 { font-size: var(--fs-h4); font-weight: var(--fw-medium); }
+
+p { line-height: var(--lh-body); text-align: justify; text-justify: inter-word; }
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { font-family: var(--font); cursor: pointer; border: none; outline: none; }
+
+/* ── Single shared container for EVERY section (Home, About, Services,
+   Projects, Team, Partners, Contact, Footer) — guarantees identical
+   left/right padding and max-width app-wide ── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* ── SECTION LABELS (eyebrow text above every section heading) ── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font);
+  font-size: var(--fs-label);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--heading-gap);
+}
+.section-label::before, .section-label::after {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+}
+
+/* ── SECTION HEADINGS (H2-level, identical across all sections) ── */
+.section-title {
+  font-family: var(--font);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-semibold);
+  color: var(--text2);
+  margin-bottom: var(--subtitle-gap);
+  letter-spacing: var(--ls-heading);
+  line-height: var(--lh-heading);
+}
+.section-title span { color: var(--gold); }
+
+.section-subtitle {
+  font-family: var(--font);
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-regular);
+  color: rgba(255,255,255,0.72);
+  max-width: 620px;
+  line-height: var(--lh-body);
+}
+
+/* ── BUTTONS (identical font/weight/tracking everywhere) ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(135deg, var(--gold), var(--amber));
+  color: #060a12;
+  font-family: var(--font);
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 26px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201,168,76,0.35);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 11px 24px;
+  border-radius: 4px;
+  border: 1px solid rgba(201,168,76,0.35);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+
+/* ── RESPONSIVE BASE (typography + container padding scale down together) ── */
+@media (max-width: 1024px) {
+  .container { padding: 0 var(--container-pad-tablet); }
+}
+@media (max-width: 768px) {
+  body { font-size: 15px; }
+  .container { padding: 0 var(--container-pad-tablet); }
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .container { padding: 0 var(--container-pad-mobile); }
+}

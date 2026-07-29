@@ -1,0 +1,64 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 12px 0;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.navbar.scrolled {
+  background: rgba(6,10,18,0.97);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(201,168,76,0.1);
+}
+.nav-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-logo { display: flex; align-items: center; flex-shrink: 0; cursor: pointer; }
+.logo-img { height: 56px; width: auto; object-fit: contain; }
+.nav-links { display: flex; list-style: none; gap: 2px; flex: 1; justify-content: center; }
+.nav-link {
+  background: none; border: none;
+  color: var(--text2);
+  font-family: var(--font);
+  font-size: var(--fs-body-sm); font-weight: var(--fw-semibold);
+  letter-spacing: 0.5px; text-transform: uppercase;
+  padding: 7px 14px; border-radius: 3px;
+  cursor: pointer; transition: color 0.2s;
+}
+.nav-link:hover { color: var(--gold); }
+.nav-cta { flex-shrink: 0; font-size: 13px; padding: 10px 20px; }
+.hamburger { display: none; background: none; border: none; color: white; cursor: pointer; margin-left: auto; }
+.mobile-menu {
+  display: none; flex-direction: column; gap: 4px;
+  padding: 14px var(--container-pad-tablet);
+  background: rgba(6,10,18,0.99);
+  border-top: 1px solid var(--border);
+}
+.mobile-link {
+  background: none; border: none;
+  color: var(--text2);
+  font-family: var(--font);
+  font-size: 16px; font-weight: var(--fw-semibold);
+  letter-spacing: 0.5px; text-transform: uppercase;
+  padding: 14px 0; text-align: left;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: color 0.2s;
+}
+.mobile-link:hover { color: var(--gold); }
+@media (max-width: 1024px) {
+  .nav-inner { padding: 0 var(--container-pad-tablet); }
+}
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .mobile-menu { display: flex; }
+}
+@media (max-width: 480px) {
+  .nav-inner { padding: 0 var(--container-pad-mobile); }
+  .mobile-menu { padding: 14px var(--container-pad-mobile); }
+}
