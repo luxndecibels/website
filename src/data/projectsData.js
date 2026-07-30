@@ -39,14 +39,11 @@ import borra1 from '../assets/borra1.png';
 import borra2 from '../assets/borra2.png';
 import semmozhi1 from '../assets/semmozhi1.png';
 import semmozhi2 from '../assets/semmozhi2.png';
-import patna1 from '../assets/patna1.png';
-import patna2 from '../assets/patna2.png';
+
 import behar from '../assets/behar.png';
 import behar1 from '../assets/behar1.png';
 import chairninar from '../assets/chairninar.png';
-import madurai1 from '../assets/madurai1.png';
-import madurai2 from '../assets/madurai2.png';
-import madurai3 from '../assets/madurai3.png';
+
 import golconda1 from '../assets/golconda1.png';
 import katra1 from '../assets/katra1.png';
 import katra2 from '../assets/katra2.png';

@@ -6,11 +6,10 @@ import beharImg from '../assets/behar.png';
 import defence4Img from '../assets/defence4.png';
 import kanipakkam1Img from '../assets/kanipakkam1.png';
 import driving1Img from '../assets/driving1.png';
-import madurai1Img from '../assets/madurai1.png';
 import chairninarImg from '../assets/chairninar.png';
 import coverImage1Img from '../assets/cover-image1.jpeg';
 
-const backgroundImages = [beharImg, defence4Img, kanipakkam1Img, driving1Img, madurai1Img, chairninarImg, coverImage1Img];
+const backgroundImages = [beharImg, defence4Img, kanipakkam1Img, driving1Img, chairninarImg, coverImage1Img];
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
