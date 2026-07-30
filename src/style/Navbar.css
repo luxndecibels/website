@@ -8,7 +8,7 @@
 .navbar.scrolled {
   background: rgba(6,10,18,0.97);
   backdrop-filter: blur(14px);
-  box-shadow: 0 1px 0 rgba(201,168,76,0.1);
+  box-shadow: 0 1px 0 rgba(0, 194, 184, 0.1);
 }
 .nav-inner {
   max-width: var(--container-max);
@@ -30,7 +30,7 @@
   padding: 7px 14px; border-radius: 3px;
   cursor: pointer; transition: color 0.2s;
 }
-.nav-link:hover { color: var(--gold); }
+.nav-link:hover { color: var(--teal); }
 .nav-cta { flex-shrink: 0; font-size: 13px; padding: 10px 20px; }
 .hamburger { display: none; background: none; border: none; color: white; cursor: pointer; margin-left: auto; }
 .mobile-menu {
@@ -49,7 +49,7 @@
   border-bottom: 1px solid var(--border);
   cursor: pointer; transition: color 0.2s;
 }
-.mobile-link:hover { color: var(--gold); }
+.mobile-link:hover { color: var(--teal); }
 @media (max-width: 1024px) {
   .nav-inner { padding: 0 var(--container-pad-tablet); }
 }

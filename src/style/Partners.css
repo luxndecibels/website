@@ -102,7 +102,7 @@
     rgba(4,  12, 35, 0.98) 60%,
     rgba(6,  16, 44, 0.98) 100%
   );
-  border: 1px solid rgba(255, 204, 51, 0.28);
+  border: 1px solid rgba(0, 194, 184, 0.28);
   border-radius: 16px;
   padding: 18px 12px 14px;
   gap: 10px;
@@ -133,9 +133,9 @@
 
 .pc:hover {
   transform: translateY(-7px);
-  border-color: rgba(255, 204, 51, 0.55);
+  border-color: rgba(0, 194, 184, 0.55);
   box-shadow:
-    0 14px 40px rgba(255, 190, 0, 0.18),
+    0 14px 40px rgba(0, 194, 184, 0.18),
     0  4px 16px rgba(0, 0, 0, 0.40);
 }
 .pc:hover::before {
@@ -161,7 +161,7 @@
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 .pc:hover .pc-logo {
-  filter: drop-shadow(0 4px 14px rgba(255, 204, 51, 0.28))
+  filter: drop-shadow(0 4px 14px rgba(0, 194, 184, 0.28))
           drop-shadow(0 2px  6px rgba(0, 0, 0, 0.4));
   transform: scale(1.06);
 }

@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-logo">
-            <img src="/logo-transparent.png" alt="Lux & Decibels" className="footer-logo-img" />
+            <img src="/logowhit.png" alt="Lux & Decibels" className="footer-logo-img" />
           </div>
           <p className="footer-brand-desc">
             Crafting immersive experiences with light, sound, technology and innovation.
@@ -45,6 +45,16 @@ export default function Footer() {
             {services.map(s => (
               <li key={s}><button onClick={() => scrollTo('services')} className="footer-link">{s}</button></li>
             ))}
+          </ul>
+        </div>
+
+        <div className="footer-col">
+          <h4 className="footer-col-title">OPERATIONAL OFFICES</h4>
+          <ul className="footer-list">
+            <li><span className="footer-link" style={{ cursor: 'default' }}>Bengaluru</span></li>
+            <li><span className="footer-link" style={{ cursor: 'default' }}>Hyderabad</span></li>
+            <li><span className="footer-link" style={{ cursor: 'default' }}>Visakhapatnam</span></li>
+            <li><span className="footer-link" style={{ cursor: 'default' }}>Kolkata</span></li>
           </ul>
         </div>
 

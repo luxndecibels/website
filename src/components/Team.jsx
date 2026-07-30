@@ -49,7 +49,9 @@ const team = [
   {
     name: 'Yugander RJ',
     role: 'Chief Design Consultant',
-    content: 'Yugander RJ began his creative journey through photography, cinematography, and movie editing at a young age. He later worked as a Creative Designer and Editor at News Asia, Singapore, before transitioning into AR and VR innovation. As the Chief Design Consultant at L&D, he leads immersive technology initiatives and creates forward-thinking AR/VR experiences that shape the future of digital interaction.',
+    content: `Yugander RJ is a creative technology professional with over 25 years of experience spanning photography, cinematography, television production, broadcast graphics, animation, VFX supervision, colour grading, and film editing. He has consistently delivered innovative multimedia solutions across television, film, advertising, and immersive technology domains.
+
+As Chief Design Consultant at Lux & Decibels (L&D), he leads the development of AR, VR, MR, AI-driven applications, digital twins, and interactive simulation solutions for defence, education, industry, and entertainment sectors, integrating creative vision with advanced technology to deliver high-impact digital experiences.`,
   },
 ];
 

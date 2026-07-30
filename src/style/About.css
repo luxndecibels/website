@@ -42,7 +42,7 @@
   width: 80px; height: 80px;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  box-shadow: 0 4px 18px rgba(201,168,76,0.4);
+  box-shadow: 0 4px 18px rgba(0, 194, 184,0.4);
 }
 .about-badge-num {
   font-family: var(--font);

@@ -21,16 +21,15 @@
 }
 .service-card {
   background: #081225;
-  border: 1px solid rgba(255,204,51,0.35);
+  border: 1px solid rgba(0, 194, 184, 0.35);
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.35s, box-shadow 0.35s;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
-.service-card:hover { transform: translateY(-6px); box-shadow: 0 0 30px rgba(255,204,51,0.12); }
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 0 30px rgba(0, 194, 184, 0.15); }
 .svc-img-wrap { position: relative; height: 200px; overflow: hidden; }
 .svc-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .service-card:hover .svc-img { transform: scale(1.05); }
@@ -52,13 +51,18 @@
   margin-bottom: 16px;
   min-height: 100px;
 }
+.svc-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
 .svc-btn {
-  background: none; border: none; color: var(--gold);
+  background: none; border: none; color: var(--teal);
   display: flex; align-items: center; gap: 8px;
   font-family: var(--font);
   font-size: var(--fs-body-sm); font-weight: var(--fw-semibold);
   letter-spacing: 0.5px; cursor: pointer;
-  margin-top: auto;
+  margin-top: 16px;
 }
 
 /* ── Sub items in main cards ── */
@@ -67,7 +71,7 @@
   flex-direction: column;
   gap: 12px;
   margin-bottom: 20px;
-  border-top: 1px solid rgba(255,204,51,0.15);
+  border-top: 1px solid rgba(0, 194, 184,0.15);
   padding-top: 16px;
 }
 .svc-sub-list-item {
@@ -77,7 +81,7 @@
 }
 .svc-sub-list-title {
   font-family: var(--font);
-  color: #ffcc33;
+  color: #00c2b8;
   font-size: 13px;
   font-weight: var(--fw-semibold);
 }
@@ -111,7 +115,7 @@
   overflow: hidden;
   background: #0d1f3c;
   border-radius: 20px;
-  border: 1px solid rgba(255,204,51,0.22);
+  border: 1px solid rgba(0, 194, 184,0.22);
   box-shadow: 0 0 60px rgba(0,0,0,0.7);
   box-sizing: border-box;
   display: flex;
@@ -168,7 +172,7 @@
   cursor: pointer; z-index: 10;
   transition: background 0.25s, color 0.25s;
 }
-.modal-close:hover { background: #ffcc33; color: #020817; }
+.modal-close:hover { background: #00c2b8; color: #020817; }
 
 /* ── Side arrow navigation ── */
 .modal-arrow {
@@ -188,8 +192,8 @@
 }
 .modal-arrow:disabled { opacity: 0.25; cursor: default; }
 .modal-arrow:not(:disabled):hover {
-  background: #ffcc33;
-  border-color: #ffcc33;
+  background: #00c2b8;
+  border-color: #00c2b8;
   color: #020817;
   transform: translateY(-50%) scale(1.1);
 }
@@ -213,7 +217,7 @@
   transition: background 0.2s, transform 0.2s;
 }
 .modal-svc-dot.active {
-  background: #ffcc33;
+  background: #00c2b8;
   transform: scale(1.3);
 }
 
@@ -222,13 +226,13 @@
   display: flex;
   gap: 8px;
   padding: 18px 24px 0;
-  border-bottom: 1px solid rgba(255,204,51,0.18);
+  border-bottom: 1px solid rgba(0, 194, 184,0.18);
   flex-wrap: wrap;
   flex-shrink: 0;
 }
 .modal-tab-btn {
   background: transparent;
-  border: 1px solid rgba(255,204,51,0.35);
+  border: 1px solid rgba(0, 194, 184,0.35);
   color: #cfd8e6;
   font-size: 12px; font-weight: var(--fw-semibold);
   letter-spacing: 0.5px; text-transform: uppercase;
@@ -239,11 +243,11 @@
   font-family: var(--font);
 }
 .modal-tab-btn:hover {
-  background: rgba(255,204,51,0.12);
-  color: #ffcc33; border-color: #ffcc33;
+  background: rgba(0, 194, 184,0.12);
+  color: #00c2b8; border-color: #00c2b8;
 }
 .modal-tab-btn.active {
-  background: #ffcc33; color: #020817; border-color: #ffcc33;
+  background: #00c2b8; color: #020817; border-color: #00c2b8;
 }
 
 /* Body */
@@ -256,7 +260,7 @@
 .modal-body::-webkit-scrollbar-thumb { background: #2f6fb8; border-radius: 20px; }
 
 .tab-heading {
-  color: #ffcc33;
+  color: #00c2b8;
   font-size: var(--fs-h3);
   font-weight: var(--fw-semibold); margin-bottom: 16px; line-height: 1.2;
   font-family: var(--font);
@@ -271,18 +275,18 @@
   padding-left: 20px; position: relative; margin-bottom: 7px;
 }
 .modal-body ul li::before {
-  content: '▸'; color: #ffcc33;
+  content: '▸'; color: #00c2b8;
   position: absolute; left: 0; font-size: 12px; top: 3px;
 }
 
 .tab-definition {
-  background: rgba(255,204,51,0.08);
-  border-left: 3px solid #ffcc33;
+  background: rgba(0, 194, 184,0.08);
+  border-left: 3px solid #00c2b8;
   border-radius: 0 10px 10px 0;
   padding: 14px 18px; margin-top: 20px;
   color: #cfd8e6; font-size: 13px; line-height: 1.85;
 }
-.tab-definition strong { color: #ffcc33; }
+.tab-definition strong { color: #00c2b8; }
 
 .modal-back {
   margin-top: 24px;

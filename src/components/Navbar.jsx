@@ -42,7 +42,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <button className="btn-primary nav-cta" onClick={() => scrollTo('contact')}>
+        <button className="btn-primary teal nav-cta" onClick={() => scrollTo('contact')}>
           Get In Touch <ArrowRight size={12} />
         </button>
         <button className="hamburger" onClick={() => setOpen(!open)}>
@@ -54,7 +54,7 @@ export default function Navbar() {
           {navLinks.map(link => (
             <button key={link} onClick={() => scrollTo(link)} className="mobile-link">{link}</button>
           ))}
-          <button className="btn-primary" onClick={() => scrollTo('contact')}>
+          <button className="btn-primary teal" onClick={() => scrollTo('contact')}>
             Get In Touch <ArrowRight size={12} />
           </button>
         </div>

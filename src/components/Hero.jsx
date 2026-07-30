@@ -63,7 +63,7 @@ export default function Hero() {
           at heritage monuments to cutting-edge XR defence simulators.
         </p>
         <div className="hero-actions">
-          <button className="btn-primary" onClick={() => scrollTo('services')}>
+          <button className="btn-primary teal" onClick={() => scrollTo('services')}>
             Our Services <ArrowRight size={13} />
           </button>
           <button className="btn-outline" onClick={() => scrollTo('about')}>

@@ -11,12 +11,12 @@
   --bg3: #0a1020;
   --card: #0d1525;
   --card2: #111c30;
-  --border: rgba(180,140,60,0.12);
-  --border2: rgba(180,140,60,0.22);
-  --gold: #c9a84c;
-  --gold2: #e8c56a;
-  --gold-glow: rgba(201,168,76,0.18);
-  --amber: #f0a500;
+  --border: rgba(0,194,184,0.12);
+  --border2: rgba(0,194,184,0.22);
+  --gold: #00c2b8;
+  --gold2: #33cfc6;
+  --gold-glow: rgba(0,194,184,0.18);
+  --amber: #0f766e;
   --teal: #00c2b8;
   --teal-glow: rgba(0,194,184,0.15);
   --text: #e8e0d0;
@@ -85,7 +85,7 @@ h2 { font-size: var(--fs-h2); font-weight: var(--fw-semibold); }
 h3 { font-size: var(--fs-h3); font-weight: var(--fw-medium); }
 h4 { font-size: var(--fs-h4); font-weight: var(--fw-medium); }
 
-p { line-height: var(--lh-body); text-align: justify; text-justify: inter-word; }
+p { line-height: var(--lh-body); }
 
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
@@ -120,6 +120,8 @@ button { font-family: var(--font); cursor: pointer; border: none; outline: none;
   height: 1px;
   background: var(--gold);
 }
+.section-label.teal { color: var(--teal); }
+.section-label.teal::before, .section-label.teal::after { background: var(--teal); }
 
 /* ── SECTION HEADINGS (H2-level, identical across all sections) ── */
 .section-title {
@@ -132,6 +134,7 @@ button { font-family: var(--font); cursor: pointer; border: none; outline: none;
   line-height: var(--lh-heading);
 }
 .section-title span { color: var(--gold); }
+.section-title.teal span { color: var(--teal); }
 
 .section-subtitle {
   font-family: var(--font);
@@ -165,6 +168,14 @@ button { font-family: var(--font); cursor: pointer; border: none; outline: none;
   box-shadow: 0 6px 20px rgba(201,168,76,0.35);
 }
 
+.btn-primary.teal {
+  background: linear-gradient(135deg, #0f766e, var(--teal));
+  color: #ffffff;
+}
+.btn-primary.teal:hover {
+  box-shadow: 0 6px 20px var(--teal-glow);
+}
+
 .btn-outline {
   display: inline-flex;
   align-items: center;
@@ -183,6 +194,12 @@ button { font-family: var(--font); cursor: pointer; border: none; outline: none;
   cursor: pointer;
 }
 .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+.btn-outline.teal {
+  border-color: rgba(0, 194, 184, 0.35);
+  color: var(--text);
+}
+.btn-outline.teal:hover { border-color: var(--teal); color: var(--teal); }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }

@@ -72,23 +72,25 @@ export default function ProjectDetail() {
         </div>
 
         {/* Gallery section */}
-        <div className="pd-section pd-gallery-section">
-          <h2 className="pd-section-title">GALLERY</h2>
-          <div className="pd-gallery-grid">
-            {project.images.map((src, i) => {
-              const isVideo = src?.includes('.mp4') || src?.includes('.webm');
-              return (
-                <div key={i} className="pd-gallery-item" onClick={() => setLightboxMedia(src)}>
-                  {isVideo ? (
-                    <video src={src} autoPlay muted loop playsInline />
-                  ) : (
-                    <img src={src} alt={`${project.name} ${i + 1}`} />
-                  )}
-                </div>
-              );
-            })}
+        {project.category !== 'arvr' && (
+          <div className="pd-section pd-gallery-section">
+            <h2 className="pd-section-title">GALLERY</h2>
+            <div className="pd-gallery-grid">
+              {project.images.map((src, i) => {
+                const isVideo = src?.includes('.mp4') || src?.includes('.webm');
+                return (
+                  <div key={i} className="pd-gallery-item" onClick={() => setLightboxMedia(src)}>
+                    {isVideo ? (
+                      <video src={src} autoPlay muted loop playsInline />
+                    ) : (
+                      <img src={src} alt={`${project.name} ${i + 1}`} />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Related Projects section */}
         {relatedProjects.length > 0 && (

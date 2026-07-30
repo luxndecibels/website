@@ -81,7 +81,7 @@
 .sd-content {
   margin-top: 40px;
   background: #081225;
-  border: 1px solid rgba(255,204,51,0.2);
+  border: 1px solid rgba(0, 194, 184,0.2);
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.3);
@@ -91,14 +91,14 @@
 .sd-tabs {
   display: flex;
   gap: 12px;
-  border-bottom: 1px solid rgba(255,204,51,0.2);
+  border-bottom: 1px solid rgba(0, 194, 184,0.2);
   padding-bottom: 24px;
   margin-bottom: 32px;
   flex-wrap: wrap;
 }
 .sd-tab-btn {
   background: transparent;
-  border: 1px solid rgba(255,204,51,0.35);
+  border: 1px solid rgba(0, 194, 184,0.35);
   color: #cfd8e6;
   font-size: 14px;
   font-weight: var(--fw-semibold);
@@ -111,19 +111,19 @@
   font-family: var(--font);
 }
 .sd-tab-btn:hover {
-  background: rgba(255,204,51,0.12);
-  color: #ffcc33;
-  border-color: #ffcc33;
+  background: rgba(0, 194, 184,0.12);
+  color: #00c2b8;
+  border-color: #00c2b8;
 }
 .sd-tab-btn.active {
-  background: #ffcc33;
+  background: #00c2b8;
   color: #020817;
-  border-color: #ffcc33;
+  border-color: #00c2b8;
 }
 
 /* ── Tab Body ── */
 .sd-tab-heading {
-  color: #ffcc33;
+  color: #00c2b8;
   font-size: var(--fs-h3);
   font-weight: var(--fw-semibold);
   margin-bottom: 20px;
@@ -160,7 +160,7 @@
 }
 .sd-list li::before {
   content: '▸';
-  color: #ffcc33;
+  color: #00c2b8;
   position: absolute;
   left: 0;
   font-size: 14px;
@@ -168,8 +168,8 @@
 }
 
 .sd-definition {
-  background: rgba(255,204,51,0.08);
-  border-left: 4px solid #ffcc33;
+  background: rgba(0, 194, 184,0.08);
+  border-left: 4px solid #00c2b8;
   border-radius: 0 10px 10px 0;
   padding: 20px 24px;
   margin-top: 32px;
@@ -179,7 +179,7 @@
   font-family: var(--font);
 }
 .sd-definition strong {
-  color: #ffcc33;
+  color: #00c2b8;
 }
 
 /* ── Responsive ── */

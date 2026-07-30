@@ -15,7 +15,7 @@ import {
   Camera 
 } from 'lucide-react';
 import '../style/AboutDetail.css';
-import storyImage1 from '../assets/madurai1.png';
+import storyImage1 from '../assets/semmozhi.png';
 import storyImage2 from '../assets/ar-vr.jpeg';
 import storyImage3 from '../assets/award1.jpeg';
 import storyImage4 from '../assets/driving1.png';

@@ -7,7 +7,7 @@ export const services = [
   {
     id: 1,
     title: 'AR / VR / MR / AI',
-    short: 'Creating immersive AR, VR, MR and AI experiences that push the boundaries of reality.',
+    short: 'Transforming training, visualization, and decision-making through next-generation Extended Reality (XR) and Artificial Intelligence technologies designed for mission-critical environments.',
     image: arvr,
     tabs: [
       {
@@ -51,13 +51,13 @@ export const services = [
     ],
     subItems: [
       { title: 'VR Operator Training', desc: 'Hands-on VR training for complex equipment operators.' },
-      { title: 'Mid Air Projections', desc: 'Aerial holographic projection and floating display systems.' },
+      { title: 'Digital Twin Solutions', desc: 'Interactive virtual replicas for simulation, monitoring, and operational optimization.' },
     ],
   },
   {
     id: 2,
     title: 'Defence Simulator',
-    short: 'High-fidelity training simulators designed for modern defence forces and tactical readiness.',
+    short: 'Delivering advanced simulation platforms that replicate real-world operational environments, enabling safer training, enhanced preparedness, and superior tactical performance.',
     image: defence,
     tabs: [
       {
@@ -78,7 +78,7 @@ export const services = [
   {
     id: 3,
     title: 'Defence',
-    short: 'Combat-ready VR training environments for Indian defence forces — at a fraction of traditional costs.',
+    short: 'Engineering immersive defence solutions that strengthen operational readiness through realistic combat simulations, virtual mission planning, and tactical training systems.',
     image: defence1,
     tabs: [
       {
@@ -100,7 +100,7 @@ export const services = [
   {
     id: 4,
     title: 'Son et Lumière',
-    short: 'Award-winning sound, lighting, and illumination solutions for monuments, heritage sites, and landmark structures.',
+    short: 'Designing world-class multimedia experiences that combine architectural lighting, immersive storytelling, and synchronized audio-visual technologies to transform iconic destinations.',
     image: behar1,
     tabs: [
       {

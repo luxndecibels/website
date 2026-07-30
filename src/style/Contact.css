@@ -28,7 +28,7 @@
 .contact-icon {
   width: 42px; height: 42px; border-radius: 10px;
   background: var(--gold-glow);
-  border: 1px solid rgba(201,168,76,0.25);
+  border: 1px solid rgba(0, 194, 184,0.25);
   display: flex; align-items: center; justify-content: center;
   color: var(--gold); flex-shrink: 0; margin-top: 2px;
 }
@@ -74,7 +74,7 @@
   transition: border-color 0.2s, background 0.2s;
   box-sizing: border-box;
 }
-.form-input:focus { border-color: rgba(201,168,76,0.5); background: rgba(255,255,255,0.06); }
+.form-input:focus { border-color: rgba(0, 194, 184,0.5); background: rgba(255,255,255,0.06); }
 .form-input::placeholder { color: var(--text2); }
 .form-textarea { resize: vertical; min-height: 130px; }
 .form-submit { width: 100%; justify-content: center; gap: 8px; margin-top: 4px; font-size: 14px; letter-spacing: 2px; }
